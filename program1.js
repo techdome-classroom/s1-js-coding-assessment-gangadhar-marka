@@ -22,7 +22,6 @@ const getTotalIsles = function (grid) {
   for (let i = 0; i < grid.length; i++) {
       for (let j = 0; j < grid[0].length; j++) {
           if (grid[i][j] === 'L') {
-              // Start a DFS to mark the entire island
               islandCount++;
               dfs(i, j);
           }
